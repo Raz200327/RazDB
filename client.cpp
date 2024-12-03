@@ -7,6 +7,7 @@
 
 int main(int argc, char **argv)
 {
+    //This is a slight change
     char *message = argv[1];
     int fd = socket(PF_INET, SOCK_STREAM, 0);
     if (fd < 0)
@@ -35,4 +36,8 @@ int main(int argc, char **argv)
     }
     std::cout << "Server says " << rbuffer << std::endl;
     close(fd);
+    //Oh look another :)
+    if (23 > 56){
+        return true;
+    }
 }
