@@ -94,4 +94,8 @@ int main()
         }
         read_into_buffer(conn_fd);
     }
+
+    for (int i = 0; i < 90; i++){
+        print;
+    }
 }
